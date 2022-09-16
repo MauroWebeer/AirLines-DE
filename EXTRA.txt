@@ -1,0 +1,21 @@
+Questão Extra:
+
+Esta parte acerca da ingestão, tratamento e disponibilização dos dados é o que 
+tenho tentado tomar como foco de estudos. Porém meus conhecimentos ainda são inciais.
+Eu, por ter começado os estudos dos serviços da GCP, a escolheria para esta fase.
+Acredito que o Cloud Storage seria o serviço ideal para armazenar os dados de forma
+bruta. Em seguida estes dados seriam levados para uma area de staging onde ocorrerá
+o processo de tranformação desses dados. Serão necessários alguns tratamentos como
+limpeza, validação das informações, missing datas, remoção de duplicações, dentre
+outros. Após esta transformação esses dados podem ser levados para um data warehouse. 
+Este processo pode ser iniciado com uma carga total dos dados da staging area e em
+seguida, como sugerido, com cargas periódicas mensais de modo que seja possível fazer
+alterações de modo incremental. Para esta ultima etapa, usaria o BigQuery. 
+
+Uma forma de automatizar esse processo seria a utilização do Cloud Composer. Com
+o Cloud Composer é possível orquestrar o fluxo de trabalhos de dados permitindo 
+a criação, agendamento e monitoramento do pipelines.
+
+Sobre escalabilidade, acredito que o BigQuery é escalável de acordo com a demanda 
+que se possua. 
+
