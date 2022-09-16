@@ -16,6 +16,3 @@ Uma forma de automatizar esse processo seria a utilização do Cloud Composer. C
 o Cloud Composer é possível orquestrar o fluxo de trabalhos de dados permitindo 
 a criação, agendamento e monitoramento do pipelines.
 
-Sobre escalabilidade, acredito que o BigQuery é escalável de acordo com a demanda 
-que se possua. 
-
